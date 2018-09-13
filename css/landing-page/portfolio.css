@@ -176,10 +176,12 @@
    /* tablets */
 @media only screen and (max-width: 960px) {
   #portfolio .portfolio-container {
-    display: grid;
+    display: flex;
+    justify-content: center;
+    /* display: grid;
     grid-template-columns: 1fr 1fr;
     grid-template-rows: 150px 150px 150px 150px 150px 150px 150px 150px;
-    grid-gap: 10px;
+    grid-gap: 10px; */
   }
 
   #portfolio .portfolio-container .box.box.image1 {
