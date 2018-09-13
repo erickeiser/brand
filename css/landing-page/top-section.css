@@ -14,15 +14,11 @@
   position: relative;
 }
 
-/* #top .info .blue-square {
-  border: 20px solid #dbf1ff;
-  width: 600px;
-  height: 400px;
-  position: absolute;
-  z-index: 0;
-  top: -60%;
-  left: -25%;
-} */
+#top .container .info .typed span{
+  font-size: 60px;
+  color: orange;
+  
+}
 
 #top .info h1 {
   font-size: 2rem;
@@ -84,9 +80,18 @@
  #top .container .info h1,p {
    text-align: center;
   }
-  #top .container .img .background-image {
-    margin: 0 12px 0 12px;
+  #top .container .img  {
+    display: flex;
+    justify-content: center;
     height: 500px;
+    margin-left: 10px;
+    margin-right: 10px;
+    margin-bottom: 50px;
+    
+  }
+
+  #top .container .img .background-image {
+    border: 3px solid red;
   }
 }
 
