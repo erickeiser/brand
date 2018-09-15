@@ -1,23 +1,27 @@
 #top .container {
- 
+  display: -ms-grid;
   display: grid;
-  grid-template-columns: 1fr 1fr;
+  -ms-grid-columns: 1fr 1fr;
+      grid-template-columns: 1fr 1fr;
   padding: 80px 0;
-  align-items: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
 }
-  
-  
-          
 
 #top .info {
   padding: 15px 0 15px 50px;
   position: relative;
 }
 
-#top .container .info .typed span{
-  font-size: 60px;
-  color: orange;
-  
+#top .info .blue-square {
+  border: 20px solid #dbf1ff;
+  width: 600px;
+  height: 400px;
+  position: absolute;
+  z-index: 0;
+  top: -60%;
+  left: -25%;
 }
 
 #top .info h1 {
@@ -59,45 +63,35 @@
  height: 700px;
 }
 
-@media only screen and (min-width: 300px) and (max-width: 424px) {
-  #top .img .background-image {
-    height: 400px;
-  }
-  
-}
-
-@media only screen and (min-width: 425px) and (max-width: 960px) {
-  #top .container {
-    display: grid;
-    grid-template-columns: 1fr;
-    padding: 80px 0;
-    align-items: center;
-  }
- #top .container .info p.tagline {
-   display: none;
- }
-
- #top .container .info h1,p {
-   text-align: center;
-  }
-  #top .container .img  {
-    display: flex;
-    justify-content: center;
-    height: 500px;
-    margin-left: 10px;
-    margin-right: 10px;
-    margin-bottom: 50px;
-    
+/* Tablets */
+@media only screen and (max-width: 960px) {
+  #top .info .blue-square {
+    top: -40%;
+    left: -80%;
   }
   #top .container .img .background-image {
-    border: 3px solid blueviolet;
-    align-content: center;
+    margin: 15px;
   }
-  #top .container .info span {
-    padding-left: 35px;
-    flex-direction: column;
-    align-items: center;
+}
+  
+  
+
+/* Phones */
+@media only screen and (max-width: 767px) {
+  #top .container {
+    padding: 0 8px 80px;
   }
+  #top .info .blue-square {
+    display: none;
+  }
+
+  header .header-menu {
+    display: none;
+  }
+  #top .container .img .background-image {
+    height: 400px;
+  }
+    
 }
 
 
