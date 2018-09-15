@@ -108,6 +108,17 @@ header .menu-btn {
   color: #fff;
 }
 
+.portfolio h1 {
+  font-size: 3rem;
+  font-weight: 700;
+  text-decoration: underline;
+  margin-bottom: 40px; 
+}
+.portfolio {
+  text-align: center;
+}
+
+
 /* Tablets */
 @media only screen and (max-width: 960px) {
   .container {width: 100%}
