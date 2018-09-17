@@ -201,7 +201,7 @@
 }
 
 #experience-section .container .experience-container .large-icons .btn:active {
-  transform: translateY(-10px);
+  transform: translateY(1px);
   box-shadow: 0 5px 10px rgba(0,0,0,0.4);
 }
 
