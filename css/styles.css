@@ -12,6 +12,18 @@
     background: #eeeeee;
 } */
 
+/* *,
+*::after,
+*::before {
+  margin: 0;
+  padding: 0;
+  box-sizing: inherit;
+}
+
+html {
+  font-size: 62.5%;
+} */
+
 .container {
   max-width: 1150;
   margin: 0 auto;
